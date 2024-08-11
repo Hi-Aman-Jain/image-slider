@@ -4,9 +4,9 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --first-color: hsl(29, 55%, 10%);
+  --first-color: hsl(29, 100%, 63%);
   --text-color: #fff;
-  --text-color-black: hsl(30, 8%, 15%);
+  --text-color-black: hsl(30, 100%, 87%);
   --body-color: #ababab;
 
   /*========== Font and typography ==========*/
@@ -34,7 +34,8 @@
 
 body {
   font-family: var(--body-font);
-  background-color: var(--body-color);
+  background: url(/assets/img/background.jpeg);
+  background-size: cover;
 }
 
 img {
@@ -58,7 +59,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  box-shadow: 0 0 15px #7b7b7b;
+  outline: 20px groove rgb(45, 45, 45);
+  box-shadow: 0 0 15px 18px #4e4e4ed3;
 }
 
 .gallery__img, 
@@ -70,7 +72,8 @@ img {
 .gallery__img {
   inset: 0;
   margin: auto;
-  transition: transform .3s;
+  transition: transform .3s ease
+  ;
 }
 
 .gallery__card::after {
@@ -118,10 +121,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   transition: transform .3s;
+  outline: 4px inset rgb(99, 99, 99);
 }
 
 .gallery__thumbnail:hover{
-  box-shadow: 0 0 15px #0d2b36;
+  box-shadow: 0 0 4px 4px #abababe2;
+  outline: 4px outset rgb(99, 99, 99);
 
 }
 .gallery__thumbnail-img {
@@ -137,7 +142,7 @@ img {
 }
 
 .gallery-cards:hover .gallery__img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .gallery .swiper-wrapper {
@@ -164,11 +169,11 @@ img {
 
 /* Sliding numbers */
 .swiper-pagination-fraction {
-  font-size: var(--small-font-size);
+  font-size: 20px;
   letter-spacing: -1px;
   font-weight: 500;
   color: var(--first-color);
-  bottom: 0;
+  top: 110px;
 }
 
 /* Arrow buttons */
