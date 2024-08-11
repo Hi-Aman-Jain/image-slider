@@ -37,7 +37,7 @@
     &__data{
         bottom: 1.5rem;
         left: 1.75rem;
-        z-index: 10;
+        z-index: 20;
     }
     &__title,
     &__subtitle{
@@ -79,7 +79,7 @@
 }
 
 .gallery-cards:hover .gallery__img{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .gallery .swiper-wrapper{
